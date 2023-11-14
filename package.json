@@ -25,7 +25,9 @@
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "react-native-text-input-interactive": ">=0.1.4"
+    "react-native-text-input-interactive": ">=0.1.4",    
+    "react-native-paper": "^4.7.2",
+    "react-native-navigation": "^7.37.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.2.0",
@@ -44,6 +46,7 @@
     "react-native-typescript-transformer": "^1.2.13",
     "semantic-release": "^22.0.6",
     "typescript": "^5.0.2"
+
   },
   "scripts": {
     "build": "cd lib && tsc && npm run copy:assets && npm run copy:package",
