@@ -11,9 +11,12 @@ This is a React Native app for Event planning.
 ### Login view
 ![Screenshot_20231115-012450_Event Planner](https://github.com/BuddhiWeerasinghe/EventPlanner/assets/9693228/6db51e63-823b-40c5-813d-5970955abece)
 
-- used firebase authentication for user authentication
-- used firebase for forgot password
-- used firestore to store user details
+- used Firebase authentication for user authentication
+- used Firebase for forgot password
+- used Firestore to store user details
+- Handled firebase exceptions in user-readable messages.
+
+- Added email/ telephone number validations
 
 ## Installation
 
