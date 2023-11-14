@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
 const LoginMain = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [secureEntry, setSecureEntry] = useState(false);
+  const [secureEntry, setSecureEntry] = useState(true);
   const [showError, setShowError] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -134,6 +134,7 @@ const LoginMain = ({navigation}) => {
         <TextInput
           style={styles.textInput}
           value={email}
+          placeholder="Enter email"
           onChangeText={text => setEmail(text)}
           left={<TextInput.Icon icon={Icons.email} />}
           onFocus={() => setShowError(false)}
@@ -141,7 +142,7 @@ const LoginMain = ({navigation}) => {
         <Text style={styles.textInputTitle}>Password</Text>
         <TextInput
           style={styles.textInput}
-          placeholder="Password"
+          placeholder="Enter Password"
           value={password}
           onChangeText={value => setPassword(value)}
           secureTextEntry={secureEntry}

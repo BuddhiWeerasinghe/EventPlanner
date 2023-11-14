@@ -72,8 +72,8 @@ const Signup = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConf, setPasswordConf] = useState('');
-  const [secureEntry, setSecureEntry] = useState(false);
-  const [secureEntryConf, setSecureEntryConf] = useState(false);
+  const [secureEntry, setSecureEntry] = useState(true);
+  const [secureEntryConf, setSecureEntryConf] = useState(true);
   const [showError, setShowError] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -123,6 +123,7 @@ const Signup = ({navigation}) => {
           <TextInput
             style={styles.textInput}
             value={email}
+            placeholder="Enter email"
             onChangeText={text => setEmail(text)}
             left={<TextInput.Icon icon={Icons.email} />}
             onFocus={() => setShowError(false)}
@@ -130,7 +131,7 @@ const Signup = ({navigation}) => {
           <Text style={styles.textInputTitle}>Password</Text>
           <TextInput
             style={styles.textInput}
-            placeholder="Password"
+            placeholder="Enter Password"
             value={password}
             onChangeText={value => setPassword(value)}
             secureTextEntry={secureEntry}
@@ -147,7 +148,7 @@ const Signup = ({navigation}) => {
           <Text style={styles.textInputTitle}>Confirm Password</Text>
           <TextInput
             style={styles.textInput}
-            placeholder="Password"
+            placeholder="Enter Password"
             value={passwordConf}
             onChangeText={value => setPasswordConf(value)}
             secureTextEntry={secureEntryConf}
